@@ -10,8 +10,11 @@ export default class Bomb extends Component {
   }
 
   render() {
-    if (this.state.initialCount)
-    return `${{this.state.secondsLeft}} seconds left before i go boom!`
+    if (this.state.initialCount > 0) {
+      return `${{this.state.secondsLeft}} seconds left before i go boom!`
+    } else {
+      return "BOOM!"
+    }
   }
 
 }
