@@ -13,7 +13,7 @@ export default class Bomb extends Component {
     if (this.state.initialCount > 0) {
       return `${{this.state.secondsLeft}} seconds left before i go boom!`
     } else {
-      return "BOOM!"
+      return "Boom!"
     }
   }
 
