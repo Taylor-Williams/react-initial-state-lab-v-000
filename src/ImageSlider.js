@@ -5,7 +5,7 @@ export default class ImageSlider extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      secondsLeft: this.prop.initialCount
+      secondsLeft: this.props.initialCount
       currentSlideIndex: this.props.secondsLeft
     }
   }
