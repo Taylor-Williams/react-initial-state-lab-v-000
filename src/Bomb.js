@@ -5,11 +5,12 @@ export default class Bomb extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      initialCount: this.props.secondsLeft
+      secondsLeft: this.props.initialCount
     }
   }
 
   render() {
+    if (this.state.initialCount)
     return `${{this.state.secondsLeft}} seconds left before i go boom!`
   }
 
